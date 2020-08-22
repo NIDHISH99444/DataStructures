@@ -1,0 +1,37 @@
+	01 String is given need to print maximum length of string ( sub string) which is not palindrome
+	02 ST Tree Inorder is given need to print all possible BST trees from the above tree which have same elements.
+	03 Double linked list swap pair wise data
+	04 Double linked list swap pair wise links
+	05 tool kit of nuts and bolts need to find the matching pairs of all.
+	06 Compression algo for image data(Huffman coding)
+	07 Find near to me restaurants approach ( told some approach using graphs which i also did not satisfy 🙂 ).
+	08 Write a method to search pattern in a given string; (naive solution) but working code with all edge case
+Y	09 Write a method that accepts 9×9 array of Sudo and returns if it is a valid state of sudoku. (Empty cells denoted by 0’s).
+Y	10 https://www.geeksforgeeks.org/converting-roman-numerals-decimal-lying-1-3999/
+	11 https://www.geeksforgeeks.org/check-if-a-string-has-all-characters-with-same-frequency-with-one-variation-allowed/
+Y	12 https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
+Y	13 https://www.geeksforgeeks.org/find-number-of-islands/
+Y	14 https://www.geeksforgeeks.org/how-to-design-a-tiny-url-or-url-shortener/
+Y	15 https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
+Y	17 https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/
+Y    19 A question related to the MS Paint. Given a grid of N*N, some of the cells are colored to create a bounded figure. Similar to MS paint’s fill colour functionality, when I click a cell (x, y) outside the bounded figure all the cells outside it should be coloured with the new colour, similarly inside. Similar to this link, but since it was a bounded figure I recursed it for all 8 directions.  https://www.geeksforgeeks.org/flood-fill-algorithm-implement-fill-paint/
+    20 https://www.geeksforgeeks.org/count-the-number-of-visible-nodes-in-binary-tree/?ref=leftbar-rightbar
+Y    21 https://www.geeksforgeeks.org/find-the-point-where-maximum-intervals-overlap/
+Y    23 https://www.geeksforgeeks.org/design-a-stack-that-supports-getmin-in-o1-time-and-o1-extra-space/
+    24 https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/
+    25 Write a code to find whether any permutation of a given string can form a palindrome. I first calculated the frequency of each letter and depending on even and odd length palindrome returned the output.The latter should contain one letter with odd frequency.
+    26 Write a code to find which permutation of a string can result in a palindrome
+Y    27 https://www.geeksforgeeks.org/second-largest-element-in-binary-search-tree-bst/
+    28 https://www.geeksforgeeks.org/burn-the-binary-tree-starting-from-the-target-node/
+    29 Largest BST in binary tree
+Y    30 Boundary traversal of a binary tree
+    31 https://www.geeksforgeeks.org/word-break-problem-dp-32/
+    32 https://www.geeksforgeeks.org/find-the-largest-subtree-in-a-tree-that-is-also-a-bst/
+Y    33 https://www.geeksforgeeks.org/how-to-print-maximum-number-of-a-using-given-four-keys/
+Y    34 https://www.geeksforgeeks.org/external-sorting/
+    36 https://leetcode.com/problems/inorder-successor-in-bst-ii
+Y    37 PostOrder traversal of BST – iteratively
+    38 Node K distance from any  Node
+
+
+

@@ -1,0 +1,57 @@
+Flipkart IQ
+
+	1>Find all the Node at the distance K from a given node in a Binary tree.
+	2> Design a LRU cache.
+Yes	3> Given two sorted linked lists. You start with a one of the two lists and then move till the end. You may switch to the other list only at the point of intersection (which mean the two node with the same value in different lists.) You have to find the path of maximum sum
+	  Eg
+	  1→3→30→90→120→240→511
+	  0→3→12→32→90→125→240→249
+	  You can switch at 3 90 or 240 so the max sum paths is
+	  1→3→12→32→90→125→240→511
+Yes	4>Celebrity Problem
+Yes	5>Snake and Ladder problem
+	6>Given a binary tree. We need to find the maximum sum path between any node to any other node present in the tree
+	7>Given a binary tree. Find out the sub binary tree which is a Binary Search Tree and also has maximum sum of nodes among all the other BST’s inside that tree
+	8>Similar to snake and ladder
+	Head → a → b .. → Tail
+	Every node has a random pointer, pouting to a random node or null.
+	You are given a dice (completely biased – you decide which one you want)
+	What is the minimum number of dice tosses required to reach Tail from Head?
+Yes	9>Given a stream of characters, find the first non-repeating character from a stream. You need to tell the first non-repeating character in O(1) time at any moment.
+	8> Given a square chessboard of N x N size, the position of Knight and position of a target is given. We need to find out the minimum steps a Knight will take to reach the target position.
+Yes	9> Given an array, print the Next Greater Element (NGE) for every element. Time complexity O(n) required.
+Yes	10)Alien Dictionary
+	11)Find all possible interpretations
+	12>https://www.careercup.com/question?id=24532662
+Yes	13>https://www.geeksforgeeks.org/minimum-time-required-so-that-all-oranges-become-rotten/
+	14>https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
+Yes	15>https://www.geeksforgeeks.org/minimum-steps-to-reach-a-destination/
+Yes	16>Given a string s1 and another string s2, what is the smallest substring in s1 that contains all the characters of s2 ? (most efficient solution)
+Yes	17>Given a string s1 from a dictionary and a string s2 from a dictionary, find the minimum number of steps to transform s1 to s2 under the following conditions:
+		   – You can change the implementaion of dictionary
+		   – Every transformation should belong to the dictionary
+		   – You are given a O(1) library function F(s1,s2) which returns True or False for the query ‘can s2 be obtained from s1 with a single transformation’
+Yes	18>You are given a string of 0’s and 1’s you have to find the number of substrings in the string which starts and end with a 1.
+	eg : input : 0010110010
+	output : 6
+	19>You are given a mapping like a → 1, b → 2, z → 26.
+	You have to print all possible combinations of a given number using the above information.
+	eg : input : 121
+	output : aba,la,au
+	20>String Compression Algorithm.
+	You have to compress a string in the following format.
+	eg : input : aasasatb
+	output : 2a2sa1t1b
+Yes 21>Design a data structure which would allow you to perform the following 2 operations supported in O(1) complexity.
+	a. Insert an element.
+	b. Return a random number from the numbers inserted so far. A random function is given which generates a random number.
+	c. Delete(int num) finds and delete a number from the ones inserted so far.
+Yes	22>There is one meeting room in Flipkart. There are n meetings in the form of (s(i),f(i)) where s(i) is start time of meeting i and f(i) is finish time of meeting i
+	What is the maximum number of meetings that can be accommodated in the meeting room ?
+Yes	23>Stream of words is input. Need to maintain top k words
+	24>Given a matrix MXN and input k. You need to multiply the matrix – transform to bigger matrix (the approach used in zoom of image it seems)
+		 Eg: [2 3 6 4 5 7]  and k = 2
+		resultant matrix [2 2 3 3 6 6
+						  2 2 3 3 6 6
+						  4 4 5 5 7 7
+						  4 4 5 5 7 7]

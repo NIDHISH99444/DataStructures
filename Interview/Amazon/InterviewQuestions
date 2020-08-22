@@ -1,0 +1,32 @@
+    Amazon
+Y   1>Parenthesis Checker
+   2>Maximum Rectangular Area in a Histogram
+    3>Add two numbers represented by linked lists I gave recursion solution code. Then asked for optimized one
+Y    4>Max sum path in two arrays
+Y    5>https://www.careercup.com/question?id=5638261762424832
+    6>Evaluation of Postfix Expression
+Y    7>Two string a haystack and needle is given find at what all indexes needle occurs in haystack as an anagram(0 based indexing)
+        INPUT: str1 = "ABACDABCABA" , str2 = "BA"
+        OUTPUT: 0,15,8,9
+    8>https://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/
+Y    9>topological sorting.
+    10>given an array of integers and two types of queries point update and range sum?
+	    ans: I said binary indexed tree then he asked for other ways I said segment tree, He asked more , I said prefix array or sqrt decomposition.
+	11>https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem.
+Y    12>Minimum time to rot all oranges.
+    13>https://www.geeksforgeeks.org/square-root-of-a-number-without-using-sqrt-function/
+Y    14>https://www.geeksforgeeks.org/bottom-view-binary-tree/
+Y    15>Design a Data Structure that supports Insertion, Deletion, search and getRandom in constant time.
+Y    16>https://www.geeksforgeeks.org/print-nodes-at-k-distance-from-root/
+Y    17>https://www.geeksforgeeks.org/find-number-of-islands/
+    18> You have been given a grid and a starting point. You are supposed to check if you can visit all the points and return to the starting point.
+Y    19>https://www.geeksforgeeks.org/find-next-greater-number-set-digits/
+Y    20> https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/
+Y    21>https://www.geeksforgeeks.org/find-k-numbers-occurrences-given-array/
+Y    22>https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+    23> https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
+    24> Course Schedule
+Y    25>https://leetcode.com/problems/longest-substring-without-repeating-characters/
+    26>https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+Y(G)27>https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+Y    28>https://leetcode.com/problems/find-all-anagrams-in-a-string/

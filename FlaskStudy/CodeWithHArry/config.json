@@ -1,0 +1,20 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri":"mysql://root:@localhost/codingthunder",
+    "prod_uri":"mysql://root:@localhost/codingthunder",
+    "fb_url": "https://facebook.com/codingThunder",
+    "tw_url": "https://twitter.com/codingThunder",
+    "gh_url": "https://github.com/codingThunder",
+    "blog_name": "Coding Thunder",
+    "about_text": "My name is nidhish Singhal",
+    "no_of_posts": 3,
+    "login_image": "login.png",
+    "admin_user": "abc",
+    "admin_password": "abc"
+
+
+  }
+
+}
