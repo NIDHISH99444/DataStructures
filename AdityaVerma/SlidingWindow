@@ -1,0 +1,44 @@
+Sliding Window 
+
+1> Video 5 -> Find All Anagrams in a String
+
+class Solution(object):
+    def findAnagrams(self, string, ptr):
+        """
+        :type s: str
+        :type p: str
+        :rtype: List[int]
+        """
+        k=len(ptr)
+        d={}
+        ans=[]
+
+        counter=0
+        for ele in ptr:
+            if ele in d : 
+                d[ele]+=1
+            else : 
+                d[ele]=1
+                counter+=1
+        i,j=0,0
+        while j<len(string):
+            if string[j] in d : 
+                d[string[j]]-=1
+                if d[string[j]]==0:
+                    counter-=1
+            if j-i+1<k:
+                j+=1
+            elif j-i+1==k:
+                if counter==0:
+                    ans.append(i)
+                if string[i] in d : 
+                    d[string[i]]+=1
+                    if d[string[i]]==1:
+                        counter+=1
+                i+=1
+                j+=1
+
+        return ans
+        
+       -----------
+
