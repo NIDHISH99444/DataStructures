@@ -1,6 +1,7 @@
 # n smallest element -> maxheap 
 # n largest element -> minheap
 # complexity -> nlogk  (where k is heap size)
+# max heap -> maximum element on top 
 
 import heapq
 from heapq import heappop,heappush,heappushpop
