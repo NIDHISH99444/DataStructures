@@ -71,4 +71,30 @@ class Solution(object):
 
         return res
         
+     
+     
+     Video 10 ->  Longest Substring With K Unique Characters
+     
+        i,j=0,0
+        d={}
+        maxLen=-1
+        
+        while j< len(arr):
+            if arr[j] not in d :
+                d[arr[j]]=1
+            else:
+                d[arr[j]]+=1
+            if len(d)==k :
+                maxLen=max(maxLen,j-i+1)
+            elif len(d)>k:
+                while len(d)>k:
+                    d[arr[i]]-=1
+                    if d[arr[i]]==0:
+                        del d[arr[i]]
+                    i+=1
+            j+=1
+
+        return (maxLen)
+        
+        
 
