@@ -1,3 +1,7 @@
+# n smallest element -> maxheap 
+# n largest element -> minheap
+# complexity -> nlogk  (where k is heap size)
+
 import heapq
 from heapq import heappop,heappush,heappushpop
 def kthSmallestElement(arr):
