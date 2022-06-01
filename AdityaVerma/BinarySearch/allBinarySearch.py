@@ -281,3 +281,37 @@ def findingElementBitonicArray(arr,key):
 arr=[-3, 8,9, 20, 17, 5, 1]
 key=5
 #print(findingElementBitonicArray(arr,key))
+
+Page Allotment of Book 
+
+nums = [12, 34, 67, 90]
+k=2
+
+def isValid(nums,mid,k):
+    counter,sum=0,0
+    for i in range(len(nums)):
+        sum+=nums[i]
+        if sum > mid:
+            counter+=1
+            sum=nums[i]
+    return counter < k
+
+
+def allotmentPages(nums,k):
+    res=-1
+    start=max(nums)
+    end=sum(nums)
+    while start <= end :
+        mid=(start+end)//2
+        if isValid(nums,mid,k):
+            res=mid
+            end=mid-1
+        else:
+            start=mid+1
+    return  res
+
+
+print(allotmentPages(nums,k))
+
+
+
