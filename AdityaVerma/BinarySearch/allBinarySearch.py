@@ -60,6 +60,60 @@ def noOftimesArrayRotated(arr):
 arr=[3,0]
 print("no of times array rotated ")
 print(noOftimesArrayRotated(arr))
+---------------------
+Question 8 : Aditya Verma ->finding element is rotatedd sorted array 
+
+class Solution(object):
+    def search(self, arr, ele):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+       
+        middle=(self.findMiddle(arr))
+
+        val1=self.findIndex(arr,0,middle-1,ele)
+        val2=self.findIndex(arr,middle,len(arr)-1,ele)
+        if val1!=-1:
+            return val1
+        elif val2!=-1:
+            return val2
+        else:
+            return -1
+        
+    
+    def findMiddle(self,arr):
+        start,end=0,len(arr)-1
+        n=len(arr)
+        if len(arr)==1:
+            return 0
+        if arr[start]<arr[end]:
+            return 0 
+        while start<=end:
+            mid=start+(end-start)//2
+            prev=(n+mid-1)%n
+            next=(mid+1)%n
+            if arr[mid]<arr[next] and arr[mid]<arr[prev]:
+                return mid 
+            elif arr[mid]>=arr[0]:
+                start=mid+1
+            else:
+                end=mid-1
+
+
+    def findIndex(self,arr,start,end,k):
+       
+        while start<=end:
+            mid=start+(end-start)//2
+            if arr[mid]==k:
+                return mid 
+            elif arr[mid]>k:
+                end=mid-1
+            else:
+                start=mid+1
+        return -1
+------------------
 
 def findElementDecreasing(arr,ele,start,end):
     while start <= end:
