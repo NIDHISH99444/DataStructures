@@ -1,3 +1,45 @@
+#print all arrays with sum as 2 
+#ouptut=[[2],[1,1]]
+
+input=[1,2,1]
+sum=2
+
+def checkSum(input,output,sum,allResult):
+    if sum==0:
+        allResult.append(output[:])
+        return
+         
+    if len(input)==0:
+        return 
+    
+    checkSum(input[1:],output,sum,allResult)
+    checkSum(input[1:],output+[input[0]],sum-input[0],allResult)      #
+
+output=[]
+allResult=[]
+checkSum(input,output,sum,allResult)
+print(allResult)
+
+#print the first  arrays with sum as 2 
+
+def checkSum(input, output, target):
+    if target == 0:
+        return output[:]
+    if len(input) == 0:
+        return None
+
+    res = checkSum(input[1:], output, target)
+    if res is not None:
+        return res
+    return checkSum(input[1:], output + [input[0]], target - input[0])
+
+input = [1, 2, 1]
+target = 2
+result = checkSum(input, [], target)
+print(result)  # Output: [2]
+
+
+
 #Combinations:
 
 

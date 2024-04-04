@@ -1,22 +1,23 @@
-def findFirstStream(arr):
+def decodeString(s):
 
-    lst=[]
-    dict={}
-    for i in range(len(arr)):
-        if arr[i] not in dict:
-            dict[arr[i]]=1
-            lst.append(arr[i])
-        else:
-            dict[arr[i]]+=1
+    stack=[]
+    res=''
+    number=''
+    for i in range(len(s)):
+        if s[i]!="]":
+            stack.append(s[i])
+        elif s[i]==']':
+            while stack[-1]!='[':
+                res+=stack.pop()
+            res=res[::-1]
+            stack.pop()
+            while stack[-1].isdigit():
+                number+=stack.pop()
+            number=number[::-1]
+            number=int(number)
+            stack.append(number*res)
+    return "".join(stack)
 
-        while len(lst)!=0:
-            if dict[lst[0]]>1 :
-                lst.pop(0)
-            else:
-                print(lst[0])
-                break
-        if len(lst)==0:
-            print(-1)
-
-stream="aqizqazpn"
-findFirstStream(stream)
+s = "3[a2[cd]]"
+# Output: "aaabcbc"
+print(decodeString(s))
