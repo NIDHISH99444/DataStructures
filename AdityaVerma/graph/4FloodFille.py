@@ -17,11 +17,10 @@ def dfs(grid,i,j,color,oldColor):
     
        
 def floodFill(grid,sr,sc,color):
-    for i in range(len(grid)):
-        for j in range(len(grid[0])):
-            oldColor=grid[sr][sc]
-            if grid[sr][sc]!=color:
-                dfs(grid,sr,sc,color,oldColor)
+    
+    oldColor=grid[sr][sc]
+    if grid[sr][sc]!=color:
+        dfs(grid,sr,sc,color,oldColor)
 
     return grid
             

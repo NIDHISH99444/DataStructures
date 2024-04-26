@@ -15,9 +15,9 @@ def checkPath(maze,n,i,j,visited,res):
         newDir=direction[k]
         if newRow>=0 and newCol>=0 and newRow<n and newCol<n and maze[newRow][newCol]==1 and visited[newRow][newCol]==0:
             res+=newDir
-            path=checkPath(maze,n,newRow,newCol,visited,res)
-            if path:
-                return path
+            res=checkPath(maze,n,newRow,newCol,visited,res)
+            if res:
+                return res
     res=res[:-1]
     visited[i][j]=0
 
