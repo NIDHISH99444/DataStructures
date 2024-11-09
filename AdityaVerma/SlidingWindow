@@ -77,26 +77,23 @@ class Solution(object):
      
      Video 10 ->  Longest Substring With K Unique Characters
      
+        res=-1
+        dict={}
         i,j=0,0
-        d={}
-        maxLen=-1
-        
-        while j< len(arr):
-            if arr[j] not in d :
-                d[arr[j]]=1
+        while j<len(arr):
+            if arr[j] not in dict:
+                dict[arr[j]]=1
             else:
-                d[arr[j]]+=1
-            if len(d)==k :
-                maxLen=max(maxLen,j-i+1)
-            elif len(d)>k:
-                while len(d)>k:
-                    d[arr[i]]-=1
-                    if d[arr[i]]==0:
-                        del d[arr[i]]
-                    i+=1
+                dict[arr[j]]+=1
+            if len(dict)==k:
+                res=max(res,j-i+1)
+            while len(dict)>k:
+                dict[arr[i]]-=1
+                if dict[arr[i]]==0:
+                    del dict[arr[i]]
+                i+=1
             j+=1
-
-        return (maxLen)
+        return  res
         
     Video 11 ->  Longest Substring With all Unique Characters
     
